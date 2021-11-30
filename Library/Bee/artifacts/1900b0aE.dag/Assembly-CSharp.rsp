@@ -350,6 +350,7 @@
 "Assets/SampleScenes/Scripts/ParticleSceneControls.cs"
 "Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs"
 "Assets/SampleScenes/Scripts/SlowMoButton.cs"
+"Assets/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs"
 -langversion:8.0
 
 /deterministic
