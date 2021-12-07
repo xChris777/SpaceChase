@@ -105,7 +105,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:UNITY_POST_PROCESSING_STACK_V2
 -define:CROSS_PLATFORM_INPUT
 -define:VISUAL_EFFECT_GRAPH_0_0_1_OR_NEWER
@@ -113,6 +113,7 @@
 -define:ENABLE_XR_MODULE
 -define:USING_ANIMATION_MODULE
 -define:USING_PHYSICS2D_MODULE
+-define:ENABLE_INPUT_SYSTEM_PACKAGE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"F:/Code/Unity Projects/SpaceChase/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll"
