@@ -8,25 +8,33 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    [Header("General Setup Settings")]
     [SerializeField] InputAction movement;
     [SerializeField] InputAction fire;
+    [Tooltip("How fast ship moves up, down, left & right")][SerializeField] float xySpeed = 25f;
+    [Tooltip("How far the ship can move left & right")][SerializeField] float xRange = 5f;
+    [Tooltip("How far the ship can move up & down")] [SerializeField] float yRange = 5f;
 
-    [SerializeField] float xySpeed = 25f;
-    [SerializeField] float xRange = 5f;
-    [SerializeField] float yRange = 5f;
+    [Header("Laser gun array")]
+    [SerializeField] GameObject[] lasers;
+
+
+    [Header("Screen position based tuning")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = -2f;
+
+    [Header("Player input based tuning")]
+    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -20f;
     [SerializeField] float rotationFactor = 1f;
+
     float yThrow;
     float xThrow;
 
 
     void Start()
     {
-        
+
     }
 
     private void OnEnable()
@@ -47,7 +55,7 @@ public class PlayerController : MonoBehaviour
         ProcessRotation();
         ProcessFiring();
     }
-        void ProcessTranslation()
+    void ProcessTranslation()
     {
         yThrow = movement.ReadValue<Vector2>().y;
         xThrow = movement.ReadValue<Vector2>().x;
@@ -72,27 +80,32 @@ public class PlayerController : MonoBehaviour
 
         float pitch = pitchDuetoPosition + pitchDuetoControlThrow;
 
-        float yaw = transform.localPosition.x + positionYawFactor; 
-        
-        float roll = xThrow * controlRollFactor; 
+        float yaw = transform.localPosition.x + positionYawFactor;
+
+        float roll = xThrow * controlRollFactor;
 
         Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
         transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationFactor);
     }
     void ProcessFiring()
     {
-        //if pushing fire button
-        // then print "shooting"
-        // else don't print "shooting"
-
         if (fire.ReadValue<float>() > 0.1)
         {
-            Debug.Log("Shooting");
+            SetLasersActive(true);
         }
         else
         {
-            Debug.Log("Not Shooting");
+            SetLasersActive(false);
         }
+    }
 
-    } 
+    void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+
 }

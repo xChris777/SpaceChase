@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Eye
       objectReference: {fileID: 0}
+    - target: {fileID: 3072509635664632342, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -192,6 +196,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+--- !u!1 &253425912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 828393246265681819, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+  m_PrefabInstance: {fileID: 1730303829623070893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &253425915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253425912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bba7b967f034e445b98e60ba104e777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &253425917
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253425912}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &609370429
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,11 +423,123 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &764194598
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764194592}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &840428217 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3892509044254049415, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
   m_PrefabInstance: {fileID: 1730303829623070893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &952842065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952842069}
+  - component: {fileID: 952842068}
+  - component: {fileID: 952842067}
+  - component: {fileID: 952842066}
+  m_Layer: 0
+  m_Name: Bridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &952842066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952842065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &952842067
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952842065}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4d7d8e7097e7f7a44b5921628e1abbb8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &952842068
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952842065}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &952842069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952842065}
+  m_LocalRotation: {x: 0.030440692, y: -0.020153956, z: -0.005356389, w: 0.999319}
+  m_LocalPosition: {x: 283.4, y: 159.5, z: 815.8}
+  m_LocalScale: {x: 98.78584, y: 0.6067812, z: 5.321351}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 3.476, y: -2.332, z: -0.685}
 --- !u!1 &1268518581
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +606,10 @@ PrefabInstance:
     - target: {fileID: 3072509635664632342, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_Name
       value: Enemy Eye 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072509635664632342, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_RootOrder
@@ -540,6 +693,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1583263898
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583263892}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1730303829623070893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -547,6 +716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 544670246307855978, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3020059719581133974, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
       propertyPath: xRange
       value: 8
@@ -559,6 +732,18 @@ PrefabInstance:
       propertyPath: fire.m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3020059719581133974, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020059719581133974, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1730303829623070895}
+    - target: {fileID: 3020059719581133974, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1730303829623070894}
     - target: {fileID: 3020059719581133974, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
       propertyPath: fire.m_ExpectedControlType
       value: Button
@@ -619,8 +804,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 3946891121850456356, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510907146928899609, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: m_Size.x
+      value: 9.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510907146928899609, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510907146928899609, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+      propertyPath: m_Size.z
+      value: 12.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+--- !u!1 &1730303829623070894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5613106146790271667, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+  m_PrefabInstance: {fileID: 1730303829623070893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730303829623070895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 544670246307855978, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
+  m_PrefabInstance: {fileID: 1730303829623070893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9098052969046070066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -688,6 +899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 9190476852975871731, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
 --- !u!1 &9098052969046070067 stripped
@@ -714,3 +929,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &9098052969046070073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9098052969046070067}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

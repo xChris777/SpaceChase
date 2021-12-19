@@ -446,6 +446,7 @@
 "Assets/AssetPacks/Standard Assets/Vehicles/Car/Scripts/Suspension.cs"
 "Assets/AssetPacks/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
 "Assets/AssetPacks/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs"
+"Assets/Scripts/CollisionHandler.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:8.0
 

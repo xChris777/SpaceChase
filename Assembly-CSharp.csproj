@@ -76,6 +76,7 @@
     <Compile Include="Assets\AssetPacks\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Scripts\CollisionHandler.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
