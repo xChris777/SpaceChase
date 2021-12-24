@@ -447,7 +447,10 @@
 "Assets/AssetPacks/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
 "Assets/AssetPacks/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs"
 "Assets/Scripts/CollisionHandler.cs"
+"Assets/Scripts/Enemy.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Scoreboard.cs"
+"Assets/Scripts/SelfDestruct.cs"
 -langversion:8.0
 
 /deterministic

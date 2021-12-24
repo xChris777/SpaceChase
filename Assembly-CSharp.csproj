@@ -66,6 +66,7 @@
     <Compile Include="Assets\AssetPacks\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
     <Compile Include="Assets\AssetPacks\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Utility\TimedObjectActivator.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Assets\AssetPacks\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Utility\FPSCounter.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Scripts\SelfDestruct.cs" />
     <Compile Include="Assets\AssetPacks\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Utility\SimpleMouseRotator.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
@@ -162,6 +164,7 @@
     <Compile Include="Assets\AssetPacks\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\AssetPacks\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Scripts\Scoreboard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetPacks\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
