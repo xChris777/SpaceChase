@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,13 @@ public class Enemy : MonoBehaviour
 
 {
     [SerializeField] AudioClip explosion;
-    [SerializeField] float destroyDelay = 2f;
+    //[SerializeField] ParticleSystem hitVFX;
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
-    [SerializeField] int scorePerHit = 10; 
+    [SerializeField] float destroyDelay = 2f;
+    [SerializeField] int scorePerHit = 10;
+    [SerializeField] int hitPoints = 3;
+    
 
     AudioSource audioSource;
 
@@ -21,23 +25,32 @@ public class Enemy : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         scoreBoard = FindObjectOfType<Scoreboard>();
+        int hitPoints;
     }
 
     void OnParticleCollision(GameObject other)
     {
-        if (isTransitioning)
-        { return; }
+        if (hitPoints > 0)
 
-        else
+        {
+            ProcessHit();
+            SubtractHP();
+        }
+
+        else if (hitPoints == 0)
         {
             KillEnemy();
             ProcessHit();
         }
     }
 
+    private void SubtractHP()
+    {
+        hitPoints = hitPoints - 1;
+    }
+
     private void KillEnemy()
     {
-        isTransitioning = true;
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         audioSource.Stop();
@@ -49,5 +62,6 @@ public class Enemy : MonoBehaviour
     private void ProcessHit()
     {
         scoreBoard.ModifyScore(scorePerHit);
+        //hitVFX.Play();
     }
 }
