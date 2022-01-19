@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float destroyDelay = 2f;
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
+    [SerializeField] int scorePerHit = 10; 
 
     AudioSource audioSource;
 
@@ -29,14 +30,24 @@ public class Enemy : MonoBehaviour
 
         else
         {
-            isTransitioning = true;
-            GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-            vfx.transform.parent = parent;
-            audioSource.Stop();
-            GetComponent<MeshRenderer>().enabled = false;
-            audioSource.PlayOneShot(explosion);
-            Destroy(gameObject);
-
+            KillEnemy();
+            ProcessHit();
         }
+    }
+
+    private void KillEnemy()
+    {
+        isTransitioning = true;
+        GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        vfx.transform.parent = parent;
+        audioSource.Stop();
+        GetComponent<MeshRenderer>().enabled = false;
+        audioSource.PlayOneShot(explosion);
+        Destroy(gameObject);
+    }
+
+    private void ProcessHit()
+    {
+        scoreBoard.ModifyScore(scorePerHit);
     }
 }

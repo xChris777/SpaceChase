@@ -106,6 +106,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:ENABLE_LEGACY_INPUT_MANAGER
 -define:UNITY_POST_PROCESSING_STACK_V2
 -define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
@@ -451,6 +452,41 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scoreboard.cs"
 "Assets/Scripts/SelfDestruct.cs"
+"Assets/Scripts/WelcomeMessage.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 -langversion:8.0
 
 /deterministic
