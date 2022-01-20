@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 6012116944293706485, guid: f66f0dca815148447a2f31eaf6ac9cf5, type: 3}
+    - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 992231607}
@@ -144,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: hitPoints
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: scorePerHit
@@ -380,24 +384,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3892509044254049415, guid: 7483e842b83e798418ebc94e473fd3c8, type: 3}
   m_PrefabInstance: {fileID: 1730303829623070893}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &943402833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7327160989117287844, guid: c58768f256b73da46ac1d91553144512, type: 3}
-  m_PrefabInstance: {fileID: 375580176280890911}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &943402837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943402833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8d22f49545c754ba7789f62281fc26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyDelay: 3
 --- !u!1 &952842065
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +553,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7081859542865820978, guid: 43f5f174d94b44e489148dfff2717242, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 6012116944293706485, guid: f66f0dca815148447a2f31eaf6ac9cf5, type: 3}
+    - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 992231607}
@@ -580,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: hitPoints
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: scorePerHit
@@ -754,18 +744,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1473226120}
     m_Modifications:
-    - target: {fileID: 3457081066207971122, guid: c58768f256b73da46ac1d91553144512, type: 3}
-      propertyPath: m_fontSize
-      value: 44
-      objectReference: {fileID: 0}
-    - target: {fileID: 3457081066207971122, guid: c58768f256b73da46ac1d91553144512, type: 3}
-      propertyPath: m_margin.w
-      value: -112.73345
-      objectReference: {fileID: 0}
-    - target: {fileID: 3457081066207971122, guid: c58768f256b73da46ac1d91553144512, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5806879692501922470, guid: c58768f256b73da46ac1d91553144512, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1541,11 +1519,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
+  hitVFX: {fileID: 6012116944293706485, guid: f66f0dca815148447a2f31eaf6ac9cf5, type: 3}
   deathVFX: {fileID: 7081859542865820978, guid: 43f5f174d94b44e489148dfff2717242, type: 3}
   parent: {fileID: 992231607}
   destroyDelay: 2
   scorePerHit: 10
-  hitPoints: 10
+  hitPoints: 8
 --- !u!54 &9098052969046070075
 Rigidbody:
   m_ObjectHideFlags: 0

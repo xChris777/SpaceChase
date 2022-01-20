@@ -7,12 +7,12 @@ public class Enemy : MonoBehaviour
 
 {
     [SerializeField] AudioClip explosion;
-    //[SerializeField] ParticleSystem hitVFX;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
     [SerializeField] float destroyDelay = 2f;
     [SerializeField] int scorePerHit = 10;
-    [SerializeField] int hitPoints = 3;
+    [SerializeField] int hitPoints = 4;
     
 
     AudioSource audioSource;
@@ -25,7 +25,6 @@ public class Enemy : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         scoreBoard = FindObjectOfType<Scoreboard>();
-        int hitPoints;
     }
 
     void OnParticleCollision(GameObject other)
@@ -33,8 +32,11 @@ public class Enemy : MonoBehaviour
         if (hitPoints > 0)
 
         {
-            ProcessHit();
+            GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity); 
+            vfx.transform.parent = parent;
+            Debug.Log("Hit");
             SubtractHP();
+            ProcessHit();
         }
 
         else if (hitPoints == 0)
@@ -62,6 +64,5 @@ public class Enemy : MonoBehaviour
     private void ProcessHit()
     {
         scoreBoard.ModifyScore(scorePerHit);
-        //hitVFX.Play();
     }
 }
