@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip explosion;
     [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject smokeVFX;
     [SerializeField] Transform parent;
     [SerializeField] float destroyDelay = 2f;
     [SerializeField] int scorePerHit = 10;
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     AudioSource audioSource;
 
-    bool isTransitioning = false;
+ 
 
     Scoreboard scoreBoard;
 
@@ -34,7 +35,6 @@ public class Enemy : MonoBehaviour
         {
             GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity); 
             vfx.transform.parent = parent;
-            Debug.Log("Hit");
             SubtractHP();
             ProcessHit();
         }
@@ -44,6 +44,12 @@ public class Enemy : MonoBehaviour
             KillEnemy();
             ProcessHit();
         }
+
+        if (hitPoints < 3)
+        {
+            GameObject vfx = Instantiate(smokeVFX, transform.position, Quaternion.identity);
+            vfx.transform.parent = parent;
+        }    
     }
 
     private void SubtractHP()

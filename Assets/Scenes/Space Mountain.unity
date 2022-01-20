@@ -143,12 +143,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7081859542865820978, guid: 43f5f174d94b44e489148dfff2717242, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: smokeVFX
+      value: 
+      objectReference: {fileID: 3816168474093103286, guid: 36d5e4093a2fdb146b84d098a7660189, type: 3}
+    - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: hitPoints
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: scorePerHit
@@ -163,16 +167,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.634314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.634314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.634314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 226.50423
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 118.90303
+      value: 119.2
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 525.4171
+      value: 525.35
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -565,6 +581,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7081859542865820978, guid: 43f5f174d94b44e489148dfff2717242, type: 3}
     - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
+      propertyPath: smokeVFX
+      value: 
+      objectReference: {fileID: 3816168474093103286, guid: 36d5e4093a2fdb146b84d098a7660189, type: 3}
+    - target: {fileID: 194115083952833800, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: explosion
       value: 
       objectReference: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
@@ -590,15 +610,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.674804
+      value: 7.989119
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.674804
+      value: 7.989119
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.674804
+      value: 7.989119
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -606,11 +626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 118.90303
+      value: 119.26
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 525.4171
+      value: 525.34
       objectReference: {fileID: 0}
     - target: {fileID: 7786264769572187594, guid: fb081071527bcd94ca0029a995fc2ec1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1326,27 +1346,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.558759
+      value: 5.0552077
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7498633
+      value: 1.9404233
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalScale.z
-      value: 13.404273
+      value: 14.863997
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 344.03
+      value: 344.29
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.373
+      value: 73.409
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 636.76
+      value: 636.56
       objectReference: {fileID: 0}
     - target: {fileID: 9190476852975871730, guid: 3692cfa420d4a0543b1b5631eecbee83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1521,6 +1541,7 @@ MonoBehaviour:
   explosion: {fileID: 8300000, guid: 06dbcfb263839934c97fac44e6293f47, type: 3}
   hitVFX: {fileID: 6012116944293706485, guid: f66f0dca815148447a2f31eaf6ac9cf5, type: 3}
   deathVFX: {fileID: 7081859542865820978, guid: 43f5f174d94b44e489148dfff2717242, type: 3}
+  smokeVFX: {fileID: 3816168474093103286, guid: 36d5e4093a2fdb146b84d098a7660189, type: 3}
   parent: {fileID: 992231607}
   destroyDelay: 2
   scorePerHit: 10
